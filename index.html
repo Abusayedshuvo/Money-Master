@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <div class="container mx-auto mt-10">
+        <div class="shadow-lg rounded p-10 max-w-5xl mx-auto">
+            <h1 class="text-5xl text-center">Money Master </h1>
+            <p class="text-2xl font-semibold mb-5">Income</p>
+            <label for="income">Income:</label>
+            <input id="income" type="number" class="bg-slate-200 p-2 rounded ml-4" placeholder="Put Income">
+
+            <p class="text-2xl font-semibold my-5">Expenses</p>
+            <label for="income">Food:</label>
+            <input id="food" type="number" class="bg-slate-200 p-2 rounded ml-10" placeholder="Food">
+            <br>
+            <br>
+            <label for="income">Rent:</label>
+            <input id="rent" type="number" class="bg-slate-200 p-2 rounded ml-10" placeholder="">
+            <br>
+            <br>
+            <label for="income">Clothes:</label>
+            <input id="clothes" type="number" class="bg-slate-200 p-2 rounded ml-4" placeholder="">
+            <br>
+            <br>
+
+            <button id="calculate" onclick="calculate()"
+                class="btn bg-sky-500 rounded-lg text-white px-10 py-3">Calculate</button>
+            <p class="py-5 font-semibold">Total Expenses: <span id="expenses">00</span> </p>
+            <p class="font-semibold">Balance: <span id="balance">00</span> </p>
+
+            <br>
+            <label for="income">Save:</label>
+            <input id="save-field" type="number" class="bg-slate-200 p-2 rounded ml-4" placeholder="">
+            <span class="px-5 font-semibold">%</span>
+            <button id="calculate" onclick="saving()"
+                class="btn bg-sky-500 rounded-lg text-white px-10 py-3">Save</button>
+            <p class="font-semibold pt-10 pb-5"> Saving Amount: <span id="saving">00</span></p>
+            <p class="font-semibold"> Remaining Balance: <span id="remaining">00</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
